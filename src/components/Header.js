@@ -19,7 +19,7 @@ export default function Header() {
   useEffect(() => {
     //Implementing the setInterval method
     const interval = setInterval(() => {
-      if (count < 5) {
+      if (count < 6) {
         setCount((c) => c + 1);
       } else {
         setCount((c) => (c = 0));
@@ -32,7 +32,9 @@ export default function Header() {
 
   return (
     <header>
-      <div className="recent-button">Recent Projects</div>
+      <div className="recent-button pushable">
+        <span className="front">Recent Projects</span>
+      </div>
       <div className="hero">
         <div
           className="starbreak"

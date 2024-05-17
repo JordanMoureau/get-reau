@@ -40,7 +40,6 @@ header {
   font-size: 1.1rem;
   margin-right: 20px;
   color: white;
-  width: 140px;
   background-color: #d7b42d;
   border-radius: 20px;
   border: 3px solid white;
@@ -50,11 +49,26 @@ header {
   font-family: "Inconsolata", monospace;
 }
 
-.recent-button:hover {
-  background-color: #7293cd;
+.pushable {
+  background: #7293cd;
+  border-radius: 12px;
+  border: none;
+  padding: 0;
   cursor: pointer;
-  transition: 0.5s;
-  box-shadow: 3px 3px white;
+  outline-offset: 4px;
+}
+.front {
+  display: block;
+  padding: 12px 42px;
+  border-radius: 12px;
+  font-size: 1.25rem;
+  background: #d7b42d;
+  color: white;
+  transform: translateY(-6px);
+}
+
+.pushable:active .front {
+  transform: translateY(-2px);
 }
 
 .hero {
