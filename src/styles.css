@@ -191,6 +191,10 @@ textarea {
   font-family: "Inconsolata", monospace;
 }
 
+.red-bg {
+  border-color: #ed6121;
+}
+
 form button {
   color: white;
   font-size: 1.8rem;
