@@ -1,5 +1,6 @@
 import stars from "../media/stars.png";
 import { useState, useEffect } from "react";
+import { MdOutlineMailOutline } from "react-icons/md";
 
 const serviceArray = [
   "Marketing",
@@ -32,8 +33,20 @@ export default function Header() {
 
   return (
     <header>
-      <div className="recent-button pushable">
-        <span className="front">Recent Projects</span>
+      <div className="topper">
+        <div className="mail-button mail-pushable">
+          <span className="mail-front">
+            <MdOutlineMailOutline
+              size={28}
+              onClick={(e) => {
+                window.location.href = "mailto:hello@getreau.com";
+              }}
+            />
+          </span>
+        </div>
+        <div className="recent-button pushable">
+          <span className="front">Recent Projects</span>
+        </div>
       </div>
       <div className="hero">
         <div
