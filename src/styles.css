@@ -37,12 +37,9 @@ header {
 }
 
 .recent-button {
-  font-size: 1.1rem;
   margin-right: 20px;
-  color: white;
-  background-color: #d7b42d;
-  border-radius: 20px;
-  border: 3px solid white;
+  color: #fc935c;
+  background-color: white;
   padding: 5px 10px;
   text-transform: uppercase;
   font-weight: 700;
@@ -50,25 +47,29 @@ header {
 }
 
 .pushable {
-  background: #7293cd;
-  border-radius: 12px;
+  background: #dd5a1d;
+  border-radius: 100px;
   border: none;
   padding: 0;
   cursor: pointer;
-  outline-offset: 4px;
+  outline-offset: 7px;
+  border: 3px solid #fc935c;
 }
 .front {
   display: block;
-  padding: 12px 42px;
-  border-radius: 12px;
-  font-size: 1.25rem;
-  background: #d7b42d;
-  color: white;
-  transform: translateY(-6px);
+  padding: 8px 17px;
+  border-radius: 100px;
+  background: white;
+  border: 3px solid #fc935c;
+  transform: translateY(-8px);
+}
+
+.front:hover {
+  background: white;
 }
 
 .pushable:active .front {
-  transform: translateY(-2px);
+  transform: translateY(-3px);
 }
 
 .hero {
@@ -80,7 +81,7 @@ header {
 
 h1 {
   margin-top: 40px;
-  font-size: 9em;
+  font-size: 10em;
   font-family: "Franchise", serif;
   -webkit-animation: flicker-in-2 2s linear both;
   animation: flicker-in-2 2s linear both;
@@ -103,6 +104,7 @@ h1 {
 }
 
 .sub-head-flasher {
+  width: 40%;
   margin: 20px 0px 30px 0px;
   background-color: white;
   border: 3px solid #ed6121;
@@ -111,9 +113,8 @@ h1 {
   border-radius: 50px;
   padding: 6px 98px;
   box-shadow: 7px 7px #ed6121;
-  transition: 5s;
-  -webkit-animation: flicker-in-2 1.2s linear both;
-  animation: flicker-in-2 1.2s linear both;
+  -webkit-animation: flicker-in-2 2s linear both;
+  animation: flicker-in-2 2s linear both;
 }
 
 h2 {
@@ -126,7 +127,7 @@ h2 {
   background-color: #ed6121;
   color: white;
   font-family: "Inconsolata", monospace;
-  font-weight: 50;
+  font-weight: 400;
   font-size: 2.6rem;
   text-transform: uppercase;
   padding: 5px;
@@ -134,8 +135,6 @@ h2 {
   width: 100%;
   border-bottom: 12px solid white;
   margin: 50px 0px;
-  -webkit-animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .contact-me {
@@ -164,17 +163,17 @@ input {
   max-width: 390px;
   width: 96%;
   border-radius: 10px;
-  border: none;
   padding: 10px 2%;
   margin: 10px 0;
   font-weight: 100;
   font-family: "Inconsolata", monospace;
+  border: 3px solid #fc935c;
 }
 
 textarea {
+  border: 3px solid #fc935c;
   font-size: 1.4rem;
   border-radius: 10px;
-  border: none;
   text-transform: uppercase;
   max-width: 390px;
   width: 96%;
@@ -193,25 +192,24 @@ textarea {
 }
 
 form button {
-  border-radius: 30px;
   color: white;
-  font-size: 2rem;
+  font-size: 1.8rem;
   background-color: #d7b42d;
   text-transform: uppercase;
   border: 3px solid white;
   padding: 10px 30px;
-  margin: 10px 0;
+  margin: 30px 0;
   text-align: center;
   font-weight: 600;
   font-family: "Inconsolata", monospace;
 }
 
-form button:hover {
+/* form button:hover {
   background-color: #7293cd;
   cursor: pointer;
   transition: 0.2s;
   box-shadow: 5px 5px white;
-}
+} */
 
 textarea:focus,
 input:focus {

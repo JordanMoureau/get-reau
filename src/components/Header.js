@@ -24,7 +24,7 @@ export default function Header() {
       } else {
         setCount((c) => (c = 0));
       }
-    }, 2000);
+    }, 3500);
 
     //Clearing the interval
     return () => clearInterval(interval);

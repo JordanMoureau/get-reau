@@ -29,7 +29,10 @@ export default function ContactForm() {
           placeholder="Tell me about your goals. How can I help?"
           required
         />
-        <button type="submit">GET REAU</button>
+
+        <button type="submit" className="recent-button pushable">
+          <span className="front">GET REAU</span>
+        </button>
       </form>
     </div>
   );
