@@ -1,6 +1,7 @@
 import stars from "../media/stars.png";
 import { useState, useEffect } from "react";
 import { MdOutlineMailOutline } from "react-icons/md";
+import { IoCloseCircle } from "react-icons/io5";
 
 const serviceArray = [
   "Marketing",
@@ -12,10 +13,11 @@ const serviceArray = [
   "Wordpress themes",
 ];
 
-const colors = ["#7293cd", "#ed6121", "#fc935c", "#d7b42d"];
+//const colors = ["#7293cd", "#ed6121", "#fc935c", "#d7b42d"];
 
 export default function Header() {
   const [count, setCount] = useState(0);
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     //Implementing the setInterval method
@@ -31,6 +33,10 @@ export default function Header() {
     return () => clearInterval(interval);
   }, [count]);
 
+  function handleClick() {
+    setIsOpen(!isOpen);
+  }
+
   return (
     <header>
       <div className="topper">
@@ -45,9 +51,22 @@ export default function Header() {
           </span>
         </div>
         <div className="recent-button pushable">
-          <span className="front">Recent Projects</span>
+          <span className="front" onClick={handleClick}>
+            Recent Projects
+          </span>
         </div>
       </div>
+
+      <div className="slide-out" style={{ width: isOpen ? "50%" : "0%" }}>
+        <div class="slide-out-container">
+          <IoCloseCircle
+            size={28}
+            onClick={handleClick}
+            className="close-button"
+          />
+        </div>
+      </div>
+
       <div className="hero">
         <div
           className="starbreak"
