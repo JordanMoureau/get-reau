@@ -11,6 +11,7 @@ const serviceArray = [
   "Custom Apps",
   "Shopify Templates",
   "Wordpress themes",
+  "Star Power",
 ];
 
 //const colors = ["#7293cd", "#ed6121", "#fc935c", "#d7b42d"];
@@ -22,7 +23,7 @@ export default function Header() {
   useEffect(() => {
     //Implementing the setInterval method
     const interval = setInterval(() => {
-      if (count < 6) {
+      if (count < serviceArray.length - 1) {
         setCount((c) => c + 1);
       } else {
         setCount((c) => (c = 0));
