@@ -146,14 +146,14 @@ h1 {
 }
 
 .sub-head-flasher {
-  width: 40%;
+  width: 60%;
   margin: 20px 0px 30px 0px;
   background-color: white;
   border: 3px solid #ed6121;
   color: #ed6121;
   text-transform: uppercase;
   border-radius: 50px;
-  padding: 6px 98px;
+  padding: 6px;
   box-shadow: 7px 7px #ed6121;
   -webkit-animation: flicker-in-2 2s linear both;
   animation: flicker-in-2 2s linear both;
@@ -567,5 +567,58 @@ footer h3 {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .sub-head-flasher {
+    width: 70%;
+  }
+
+  .marquee {
+    font-size: 2.1rem;
+  }
+
+  footer .contact {
+    width: 100%;
+  }
+  .starbreak {
+    background-size: cover;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  h2 {
+    font-size: 2rem;
+  }
+  h1 {
+    font-size: 8.5rem;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+  h1 {
+    font-size: 6.3rem;
+  }
+  .marquee {
+    font-size: 1.5rem;
+  }
+  form {
+    width: auto;
+  }
+  footer p {
+    font-size: 1.5rem;
+  }
+  footer h3 {
+    font-size: 1.2rem;
+  }
+  input {
+    font-size: 1.1rem;
+  }
+  textarea {
+    font-size: 1.1rem;
   }
 }
