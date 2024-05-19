@@ -213,8 +213,7 @@ h2 {
 }
 
 .contact-me {
-  width: 100%;
-  padding: 20px 0px 100px 0px;
+  padding: 20px 10px 100px 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -224,7 +223,7 @@ h2 {
 }
 
 form {
-  width: 100%;
+  width: 95%;
   margin-top: 50px;
   max-width: 550px;
   display: flex;
@@ -617,10 +616,6 @@ footer h3 {
   .marquee {
     font-size: 2.1rem;
   }
-
-  footer .contact {
-    width: 100%;
-  }
   .starbreak {
     background-size: cover;
   }
@@ -645,9 +640,7 @@ footer h3 {
   .marquee {
     font-size: 1.5rem;
   }
-  form {
-    width: auto;
-  }
+
   footer p {
     font-size: 1.5rem;
   }
