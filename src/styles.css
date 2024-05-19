@@ -116,7 +116,13 @@ header {
 
 .slide-container {
   width: 100%;
+  height: 100%;
   padding: 10px;
+  border-left: 13px solid #7293cd;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
 }
 
 .close-button {
@@ -139,11 +145,6 @@ header {
   background-color: white;
   transition: 2s;
   z-index: 1;
-  border-left: 13px solid #7293cd;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: start;
 }
 
 .hero {
