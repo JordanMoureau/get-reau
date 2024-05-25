@@ -3,10 +3,6 @@ import stars from "../media/stars.png";
 export default function Footer() {
   return (
     <>
-      <div
-        className="starbreak"
-        style={{ backgroundImage: `url(${stars})` }}
-      ></div>
       <footer>
         <div className="contact">
           <p>

@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import { FaRegHandPeace } from "react-icons/fa";
+import emailjs from "@emailjs/browser";
 
 export default function ContactForm() {
   const [name, setName] = useState("");
@@ -9,6 +10,8 @@ export default function ContactForm() {
 
   const [messageSent, setMessageSent] = useState(false);
 
+  const form = useRef();
+
   function clearForm() {
     setName("");
     setContactInfo("");
@@ -16,25 +19,35 @@ export default function ContactForm() {
     setMessage("");
   }
 
-  function submitForm(e) {
+  // function submitForm(e) {
+
+  // }
+
+  function sendEmail(e) {
     e.preventDefault();
+
     setMessageSent(true);
 
+    emailjs
+      .sendForm("service_m48jv7r", "template_w7kkuia", form.current, {
+        publicKey: "p7oN8NqSYov4ZfxyP",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
     clearForm();
   }
 
-  const form = useRef();
-
   return (
     <div className="contact-me">
-      <form
-        name="contact"
-        onSubmit={submitForm}
-        method="POST"
-        ref={form}
-        netlify
-      >
+      <form name="contact" onSubmit={sendEmail} method="POST" ref={form}>
         <input
+          aria-label="Your first and last name"
           value={name}
           placeholder="Your Full name"
           type="text"
@@ -75,6 +88,7 @@ export default function ContactForm() {
         />
 
         <button
+          style={{ width: "40%" }}
           type="submit"
           className="recent-button pushable"
           {...(messageSent ? { disabled: true } : {})}

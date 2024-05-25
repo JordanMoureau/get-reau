@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { IoCloseCircle } from "react-icons/io5";
 
+import backgroundImage from "../background-hero.png";
+
 const serviceArray = [
   "Marketing",
   "Seo Optimization",
@@ -39,65 +41,67 @@ export default function Header() {
   }
 
   return (
-    <header>
-      <div className="topper">
-        <div className="mail-button mail-pushable">
-          <span className="mail-front">
-            <MdOutlineMailOutline
+    <>
+      <header
+        style={{
+          backgroundImage: `url(${backgroundImage})`,
+        }}
+      >
+        <div className="topper">
+          <div className="mail-button mail-pushable">
+            <span className="mail-front">
+              <MdOutlineMailOutline
+                size={28}
+                onClick={(e) => {
+                  window.location.href = "mailto:hello@getreau.com";
+                }}
+              />
+            </span>
+          </div>
+          <div className="recent-button pushable">
+            <span className="front" onClick={handleClick}>
+              Recent Projects
+            </span>
+          </div>
+        </div>
+
+        <div className="slide-out" style={{ width: isOpen ? "60%" : "0%" }}>
+          <div class="slide-container">
+            <IoCloseCircle
               size={28}
-              onClick={(e) => {
-                window.location.href = "mailto:hello@getreau.com";
-              }}
+              onClick={handleClick}
+              className="close-button"
             />
-          </span>
+          </div>
         </div>
-        <div className="recent-button pushable">
-          <span className="front" onClick={handleClick}>
-            Recent Projects
-          </span>
-        </div>
-      </div>
 
-      <div className="slide-out" style={{ width: isOpen ? "60%" : "0%" }}>
-        <div class="slide-container">
-          <IoCloseCircle
-            size={28}
-            onClick={handleClick}
-            className="close-button"
-          />
+        <div className="hero">
+          <div
+            className="starbreak"
+            style={{ backgroundImage: `url(${stars})` }}
+          ></div>
+          <h1>
+            <span className="blue">R</span>
+            <span className="red">E</span>
+            <span className="pink">A</span>
+            <span className="yellow">U </span>
+            <span className="blue">A</span>
+            <span className="red">G</span>
+            <span className="pink">E</span>
+            <span className="yellow">N</span>
+            <span className="blue">C</span>
+            <span className="red">Y</span>
+          </h1>
+          <div className="sub-head-flasher">
+            <h2>{serviceArray[count]}</h2>
+          </div>
+          <div
+            className="starbreak"
+            style={{ backgroundImage: `url(${stars})` }}
+          ></div>
         </div>
-      </div>
-
-      <div className="hero">
-        <div
-          className="starbreak"
-          style={{ backgroundImage: `url(${stars})` }}
-        ></div>
-        <h1>
-          <span className="blue">R</span>
-          <span className="red">E</span>
-          <span className="pink">A</span>
-          <span className="yellow">U </span>
-          <span className="blue">A</span>
-          <span className="red">G</span>
-          <span className="pink">E</span>
-          <span className="yellow">N</span>
-          <span className="blue">C</span>
-          <span className="red">Y</span>
-        </h1>
-        <div className="sub-head-flasher">
-          <h2>{serviceArray[count]}</h2>
-        </div>
-        <div
-          className="starbreak"
-          style={{ backgroundImage: `url(${stars})` }}
-        ></div>
-        <div className="marquee">need a website? Get REau </div>
-        <div
-          className="starbreak"
-          style={{ backgroundImage: `url(${stars})` }}
-        ></div>
-      </div>
-    </header>
+      </header>
+      <div className="marquee">need a website? Get REau </div>
+    </>
   );
 }
