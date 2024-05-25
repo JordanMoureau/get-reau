@@ -66,7 +66,7 @@ export default function Header() {
         </div>
 
         <div className="slide-out" style={{ width: isOpen ? "60%" : "0%" }}>
-          <div class="slide-container">
+          <div className="slide-container">
             <IoCloseCircle
               size={28}
               onClick={handleClick}
