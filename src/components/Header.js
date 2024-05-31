@@ -1,9 +1,9 @@
 import stars from "../media/stars.png";
 import { useState, useEffect } from "react";
 import { MdOutlineMailOutline } from "react-icons/md";
-import { IoCloseCircle } from "react-icons/io5";
 
 import backgroundImage from "../background-hero.png";
+import SlideOut from "./SlideOut";
 
 const serviceArray = [
   "Marketing",
@@ -64,17 +64,7 @@ export default function Header() {
             </span>
           </div>
         </div>
-
-        <div className="slide-out" style={{ width: isOpen ? "60%" : "0%" }}>
-          <div className="slide-container">
-            <IoCloseCircle
-              size={28}
-              onClick={handleClick}
-              className="close-button"
-            />
-          </div>
-        </div>
-
+        <SlideOut isOpen={isOpen} handleClick={handleClick} />
         <div className="hero">
           <div
             className="starbreak"
