@@ -1,4 +1,9 @@
 import { IoCloseCircle } from "react-icons/io5";
+import fromnovphoto from "../media/fromnov.png";
+import coppa from "../media/coppa.png";
+import bookish from "../media/bookish.png";
+import devprof from "../media/dev.png";
+import newlove from "../media/newlove.png";
 
 export default function SlideOut({ isOpen, handleClick }) {
   return (
@@ -10,10 +15,27 @@ export default function SlideOut({ isOpen, handleClick }) {
           className="close-button"
         />
 
-        <div className="project-box"></div>
-        <div className="project-box"></div>
-        <div className="project-box"></div>
-        <div className="project-box"></div>
+        <div
+          className="project-box"
+          style={{ backgroundImage: `url(${fromnovphoto})` }}
+        ></div>
+        <div
+          className="project-box"
+          style={{ backgroundImage: `url(${bookish})` }}
+        ></div>
+        <div
+          className="project-box"
+          style={{ backgroundImage: `url(${devprof})` }}
+        ></div>
+
+        <div
+          className="project-box"
+          style={{ backgroundImage: `url(${coppa})` }}
+        ></div>
+        <div
+          className="project-box"
+          style={{ backgroundImage: `url(${newlove})` }}
+        ></div>
 
         {/* <div
           className="build-button"
