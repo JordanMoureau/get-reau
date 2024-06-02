@@ -1,11 +1,53 @@
 import { IoCloseCircle } from "react-icons/io5";
-import fromnovphoto from "../media/fromnov.png";
+import fromnovphoto from "../media/fromnovphoto.png";
+import fromnov from "../media/fromnov.png";
 import coppa from "../media/coppa.png";
 import bookish from "../media/bookish.png";
-import devprof from "../media/dev.png";
 import newlove from "../media/newlove.png";
+import newloveshop from "../media/newloveshop.png";
+import coppatwo from "../media/coppatwo.png";
+import bookishtwo from "../media/bookishtwo.png";
+
+import { useState } from "react";
 
 export default function SlideOut({ isOpen, handleClick }) {
+  const [isHoverFromNov, setIsHoverFromNov] = useState(false);
+  const [isHoverCoppa, setIsHoverCoppa] = useState(false);
+  const [isHoverNewLove, setIsHoverNewLove] = useState(false);
+  const [isHoverBookish, setIsHoverBookish] = useState(false);
+
+  function handleMouseEnter() {
+    setIsHoverFromNov(true);
+  }
+
+  function handleMouseExit() {
+    setIsHoverFromNov(false);
+  }
+
+  function handleMouseEnterNewLove() {
+    setIsHoverNewLove(true);
+  }
+
+  function handleMouseExitNewLove() {
+    setIsHoverNewLove(false);
+  }
+
+  function handleMouseEnterCoppa() {
+    setIsHoverCoppa(true);
+  }
+
+  function handleMouseExitCoppa() {
+    setIsHoverCoppa(false);
+  }
+
+  function handleMouseEnterBookish() {
+    setIsHoverBookish(true);
+  }
+
+  function handleMouseExitBookish() {
+    setIsHoverBookish(false);
+  }
+
   return (
     <div className="slide-out" style={{ width: isOpen ? "300px" : "0%" }}>
       <div className="slide-container">
@@ -16,25 +58,37 @@ export default function SlideOut({ isOpen, handleClick }) {
         />
 
         <div
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseExit}
           className="project-box"
-          style={{ backgroundImage: `url(${fromnovphoto})` }}
+          style={{
+            backgroundImage: `url(${!isHoverFromNov ? fromnovphoto : fromnov})`,
+          }}
         ></div>
         <div
+          onMouseEnter={handleMouseEnterBookish}
+          onMouseLeave={handleMouseExitBookish}
           className="project-box"
-          style={{ backgroundImage: `url(${bookish})` }}
-        ></div>
-        <div
-          className="project-box"
-          style={{ backgroundImage: `url(${devprof})` }}
+          style={{
+            backgroundImage: `url(${!isHoverBookish ? bookish : bookishtwo})`,
+          }}
         ></div>
 
         <div
           className="project-box"
-          style={{ backgroundImage: `url(${coppa})` }}
+          onMouseEnter={handleMouseEnterCoppa}
+          onMouseLeave={handleMouseExitCoppa}
+          style={{
+            backgroundImage: `url(${!isHoverCoppa ? coppa : coppatwo})`,
+          }}
         ></div>
         <div
+          onMouseEnter={handleMouseEnterNewLove}
+          onMouseLeave={handleMouseExitNewLove}
           className="project-box"
-          style={{ backgroundImage: `url(${newlove})` }}
+          style={{
+            backgroundImage: `url(${!isHoverNewLove ? newlove : newloveshop})`,
+          }}
         ></div>
 
         {/* <div
