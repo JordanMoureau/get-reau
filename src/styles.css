@@ -336,6 +336,12 @@ h2 {
   text-align: center;
 }
 
+@media screen and (max-width: 4500px) {
+  .slideout-info p {
+    width: 90%;
+  }
+}
+
 .contact-me {
   background-color: #f4e8db;
   padding: 20px 10px 10px 10px;
