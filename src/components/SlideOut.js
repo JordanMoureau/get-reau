@@ -10,6 +10,8 @@ import bookishtwo from "../media/bookishtwo.png";
 
 import { useState } from "react";
 
+import { NavLink } from "react-router-dom";
+
 export default function SlideOut({ isOpen, handleClick }) {
   const [isHoverFromNov, setIsHoverFromNov] = useState(false);
   const [isHoverCoppa, setIsHoverCoppa] = useState(false);
@@ -57,14 +59,18 @@ export default function SlideOut({ isOpen, handleClick }) {
           className="close-button"
         />
 
-        <div
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseExit}
-          className="project-box"
-          style={{
-            backgroundImage: `url(${!isHoverFromNov ? fromnovphoto : fromnov})`,
-          }}
-        ></div>
+        <NavLink to="/fromnov">
+          <div
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseExit}
+            className="project-box"
+            style={{
+              backgroundImage: `url(${
+                !isHoverFromNov ? fromnovphoto : fromnov
+              })`,
+            }}
+          ></div>
+        </NavLink>
         <div
           onMouseEnter={handleMouseEnterBookish}
           onMouseLeave={handleMouseExitBookish}
@@ -90,15 +96,6 @@ export default function SlideOut({ isOpen, handleClick }) {
             backgroundImage: `url(${!isHoverNewLove ? newlove : newloveshop})`,
           }}
         ></div>
-
-        {/* <div
-          className="build-button"
-          //   style={{
-          //     width: isOpen ? "260px" : "0px",
-          //   }}
-        >
-          Build a project
-        </div> */}
       </div>
     </div>
   );

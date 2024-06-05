@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import { FaRegHandPeace } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
+import stars from "../media/stars.png";
 
 export default function ContactForm() {
   const [name, setName] = useState("");
@@ -45,6 +46,10 @@ export default function ContactForm() {
 
   return (
     <div className="contact-me">
+      <div
+        className="starbreak"
+        style={{ backgroundImage: `url(${stars})` }}
+      ></div>
       <form name="contact" onSubmit={sendEmail} method="POST" ref={form}>
         <input
           aria-label="Your first and last name"
@@ -102,6 +107,10 @@ export default function ContactForm() {
           </span>
         </button>
       </form>
+      <div
+        className="starbreak"
+        style={{ backgroundImage: `url(${stars})` }}
+      ></div>
     </div>
   );
 }

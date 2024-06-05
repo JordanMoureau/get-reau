@@ -1,12 +1,15 @@
 import stars from "../media/stars.png";
-import { useState, useEffect } from "react";
-import { MdOutlineMailOutline } from "react-icons/md";
+import { useState, useEffect, useRef } from "react";
+import TopNav from "./TopNav.js";
+
+import { motion, useInView, AnimatePresence } from "framer-motion";
+
+// import { useInView } from "react-intersection-observer";
 
 import backgroundImage from "../background-hero.png";
-import SlideOut from "./SlideOut";
 
 const serviceArray = [
-  "Marketing",
+  "Digital Marketing",
   "Seo Optimization",
   "Full Service Websites",
   "Ad Campaigns",
@@ -20,7 +23,6 @@ const serviceArray = [
 
 export default function Header() {
   const [count, setCount] = useState(0);
-  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     //Implementing the setInterval method
@@ -36,9 +38,8 @@ export default function Header() {
     return () => clearInterval(interval);
   }, [count]);
 
-  function handleClick() {
-    setIsOpen(!isOpen);
-  }
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
 
   return (
     <>
@@ -47,24 +48,8 @@ export default function Header() {
           backgroundImage: `url(${backgroundImage})`,
         }}
       >
-        <div className="topper">
-          <div className="mail-button mail-pushable">
-            <span className="mail-front">
-              <MdOutlineMailOutline
-                size={28}
-                onClick={(e) => {
-                  window.location.href = "mailto:hello@getreau.com";
-                }}
-              />
-            </span>
-          </div>
-          <div className="recent-button pushable">
-            <span className="front" onClick={handleClick}>
-              Recent Projects
-            </span>
-          </div>
-        </div>
-        <SlideOut isOpen={isOpen} handleClick={handleClick} />
+        <TopNav />
+
         <div className="hero">
           <div
             className="starbreak"
@@ -91,7 +76,29 @@ export default function Header() {
           ></div>
         </div>
       </header>
-      <div className="marquee">need a website? Get REau </div>
+      <div className="marquee">Need a website? Get Reau</div>
+
+      <div
+        ref={ref}
+        style={{
+          height: !isInView ? "0" : "200px",
+          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+        }}
+        className="slideout-info"
+      >
+        <p>
+          A full service creative agency specializing in refined web prescences
+          for small businesses with the added bonus of being actually
+          affordable.
+        </p>
+      </div>
     </>
   );
 }
+
+// style={{ overflow: "hidden" }}
+// initial={{ height: 0 }}
+// animate={{ height: "auto" }}
+// transition={{ stiffness: 100, duration: 3 }}
+// exit={{ height: 0 }}
+// key={"container"}

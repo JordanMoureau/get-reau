@@ -1,13 +1,9 @@
-import stars from "../media/stars.png";
-
 export default function Footer() {
   return (
     <>
       <footer>
         <div className="contact">
-          <p>
-            A full service creative agency home based in eastern washington.
-          </p>
+          <p>Small town vibes. Big city marketing.</p>
           <h3>copyright 2024 reau </h3>
         </div>
       </footer>

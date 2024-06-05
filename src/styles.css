@@ -32,7 +32,7 @@ header {
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding-top: 20px;
+  padding-top: 10px;
   align-items: end;
   background-size: cover;
   background-repeat: no-repeat;
@@ -44,7 +44,7 @@ header {
   display: flex;
   flex-direction: row;
   align-items: end;
-  justify-content: end;
+  justify-content: space-between;
 }
 
 .recent-button {
@@ -158,18 +158,34 @@ header {
   overflow: scroll;
 }
 
+.right-nav {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 10px;
+  align-items: center;
+  width: 40%;
+}
+
+.left-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  width: 40%;
+  padding-left: 15px;
+}
+
 .build-button {
   border-radius: 20px;
   text-align: center;
   font-weight: 700;
-  position: fixed;
-  bottom: 15px;
-  right: 15px;
-  padding: 8px 18px;
+  padding: 3px 10px;
   font-size: 1rem;
   text-transform: uppercase;
   color: white;
-  background-color: #7293cd;
+  background-color: #f4e8db;
   border: 3px solid white;
   font-family: "Inconsolata", monospace;
   overflow: hidden;
@@ -177,8 +193,46 @@ header {
 
 .build-button:hover {
   text-shadow: 2px 2px #d7b42d;
+  box-shadow: 2px 2px #d7b42d;
   cursor: pointer;
-  background-color: #81a3de;
+}
+
+.social {
+  color: white;
+}
+
+.social:hover {
+  filter: drop-shadow(2px 2px #d7b42d);
+  cursor: pointer;
+}
+
+.home {
+  color: #fc935c;
+  transition: 0.2s;
+}
+
+.home:hover {
+  filter: drop-shadow(2px 2px white);
+  cursor: pointer;
+}
+
+.question {
+  background-color: white;
+  color: #fc935c;
+  font-weight: 500;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  padding: 5px 15px;
+  border-radius: 50px;
+  font-family: "Inconsolata", monospace;
+  font-size: 2rem;
+  text-transform: uppercase;
+  transition: 2s;
+}
+
+.question:hover {
+  cursor: pointer;
 }
 
 .project-box {
@@ -205,6 +259,7 @@ header {
   display: flex;
   align-items: center;
   flex-direction: column;
+  height: 86vh;
 }
 
 h1 {
@@ -260,7 +315,24 @@ h2 {
   text-transform: uppercase;
   padding: 5px;
   overflow: hidden;
-  border-bottom: 12px solid white;
+  text-align: center;
+}
+
+.slideout-info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  overflow: hidden;
+}
+
+.slideout-info p {
+  width: 50%;
+  padding: 50px 10px;
+  font-family: "Inconsolata", monospace;
+  font-size: 1.3rem;
+  color: #fc935c;
   text-align: center;
 }
 
@@ -368,10 +440,11 @@ footer .contact {
   font-family: "Inconsolata", monospace;
   text-transform: uppercase;
   color: white;
+  text-align: left;
 }
 
 footer p {
-  font-size: 1.4em;
+  font-size: 1.8em;
 }
 
 footer h3 {
@@ -386,6 +459,98 @@ footer h3 {
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.project-page {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 500;
+  background-color: white;
+  padding: 50px;
+}
+
+.project-page img {
+  object-fit: cover;
+  width: 50%;
+}
+
+.project-page-content {
+  color: #7293cd;
+  font-family: "Inconsolata", monospace;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+  text-align: left;
+}
+
+.project-page-content h1 {
+  margin-top: 0;
+  font-size: 1.8em;
+  font-family: "Inconsolata", monospace;
+  animation: none;
+}
+
+.project-page-content h3 {
+  margin-left: 10px;
+  margin-top: 0;
+  font-size: 1.4em;
+  font-family: "Inconsolata", monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.project-page-content p {
+  font-size: 1em;
+  color: #7293cd;
+  font-family: "Inconsolata", monospace;
+  margin: 20px 0;
+}
+
+.project-page-content a {
+  margin-top: 30px;
+  font-size: 1.8em;
+  text-decoration: underline;
+  color: #7293cd;
+  font-family: "Inconsolata", monospace;
+}
+
+.project-page-content a:hover {
+  color: #92b3ed;
+  cursor: pointer;
+}
+
+.list {
+  width: 100%;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: row;
+}
+
+.list-item p {
+  text-transform: uppercase;
+  margin-left: 15px;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 780px) {
+  .project-page {
+    flex-direction: column-reverse;
+    padding: 50px 10px;
+  }
+
+  .project-page img {
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  .project-page-content {
+    width: 80%;
+  }
 }
 
 /* ----------------------------------------------
@@ -527,6 +692,17 @@ footer h3 {
     opacity: 1;
   }
 }
+
+@keyframes grow-tall {
+  0% {
+    height: 0px;
+  }
+
+  100% {
+    height: 200px;
+  }
+}
+
 @keyframes flicker-in-2 {
   0% {
     opacity: 0;
