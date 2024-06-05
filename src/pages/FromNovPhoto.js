@@ -27,8 +27,7 @@ export default function FromNovPhoto() {
             portfolio for a unique photography service. The focus of the project
             was quick delivery of assets and approachable design. We dug deep
             researching the target audience, SEO Optimizing and building
-            responsively. Our results? A comforting, realtable brand and website
-            for a talented artist in a complex, reactive market.{" "}
+            responsively.{" "}
           </p>
 
           <div className="list">
@@ -53,6 +52,12 @@ export default function FromNovPhoto() {
               <h3>on going digital ad campaign</h3>
             </div>
           </div>
+
+          <p>
+            {" "}
+            Our results? A comforting, realtable brand and website for a
+            talented artist in a complex, reactive market.
+          </p>
 
           <a
             href="https://www.fromnovemberphotography.com/"
