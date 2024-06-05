@@ -336,7 +336,7 @@ h2 {
   text-align: center;
 }
 
-@media screen and (max-width: 4500px) {
+@media screen and (max-width: 650px) {
   .slideout-info p {
     width: 90%;
   }
