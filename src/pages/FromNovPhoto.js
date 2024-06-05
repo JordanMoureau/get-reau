@@ -55,7 +55,7 @@ export default function FromNovPhoto() {
 
           <p>
             {" "}
-            Our results? A comforting, realtable brand and website for a
+            Our results? A comforting, relatable brand and website for a
             talented artist in a complex, reactive market.
           </p>
 
