@@ -24,9 +24,9 @@ export default function FromNovPhoto() {
           <h1>From November Photography</h1>
           <p>
             We designed and built a website for From November Photography, a
-            portfolio for a totally unique photography service. The focus of the
-            projecy was quick delivery of assets and approachable design. We dug
-            deep researching the target audience, SEO Optimizing and building
+            portfolio for a unique photography service. The focus of the project
+            was quick delivery of assets and approachable design. We dug deep
+            researching the target audience, SEO Optimizing and building
             responsively. Our results? A comforting, realtable brand and website
             for a talented artist in a complex, reactive market.{" "}
           </p>
