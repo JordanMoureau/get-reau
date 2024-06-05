@@ -23,10 +23,12 @@ export default function FromNovPhoto() {
         <div className="project-page-content">
           <h1>From November Photography</h1>
           <p>
-            This project had to have a feel like nothing else out there to match
-            the unique style of the artist. We built a website to showcase her
-            work. Fam gastropub twee, pickled yr ugh poutine master cleanse
-            yuccie pok pok.{" "}
+            We designed and built a website for From November Photography, a
+            portfolio for a totally unique photography service. The focus of the
+            projecy was quick delivery of assets and approachable design. We dug
+            deep researching the target audience, SEO Optimizing and building
+            responsively. Our results? A comforting, realtable brand and website
+            for a talented artist in a complex, reactive market.{" "}
           </p>
 
           <div className="list">
@@ -51,13 +53,6 @@ export default function FromNovPhoto() {
               <h3>on going digital ad campaign</h3>
             </div>
           </div>
-
-          <p>
-            This project had to have a feel like nothing else out there to match
-            the unique style of the artist. We built a website to showcase her
-            work. Fam gastropub twee, pickled yr ugh poutine master cleanse
-            yuccie pok pok.{" "}
-          </p>
 
           <a
             href="https://www.fromnovemberphotography.com/"
