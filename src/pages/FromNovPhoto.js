@@ -1,9 +1,17 @@
 import Footer from "../components/Footer";
 import stars from "../media/stars.png";
 import backgroundImage from "../background-hero.png";
-import fromnovphotomain from "../media/fromnovmain.png";
+
 import { MdOutlineCheckBox } from "react-icons/md";
 import TopNav from "../components/TopNav";
+
+import main from "../media/fromnov/main.png";
+import foot from "../media/fromnov/foot.png";
+import dance from "../media/fromnov/dance.png";
+import recents from "../media/fromnov/recents.png";
+import about from "../media/fromnov/about.png";
+
+import { motion } from "framer-motion";
 
 export default function FromNovPhoto() {
   return (
@@ -19,7 +27,40 @@ export default function FromNovPhoto() {
       ></div>
 
       <div className="project-page">
-        <img src={fromnovphotomain} alt="a photography website" />
+        <div className="project-images">
+          <motion.img
+            whileHover={{ scale: 1.4 }}
+            src={main}
+            alt="a photography website"
+            style={{ width: "100%" }}
+          />
+          <motion.img
+            whileHover={{ scale: 1.4 }}
+            src={about}
+            alt="a photography website"
+            style={{ width: "48%" }}
+          />
+          <motion.img
+            whileHover={{ scale: 1.4 }}
+            src={recents}
+            alt="a photography website"
+            style={{ width: "48%" }}
+          />
+          <motion.img
+            whileHover={{ scale: 1.4 }}
+            src={foot}
+            alt="a photography website"
+            style={{ width: "100%" }}
+          />
+
+          <motion.img
+            whileHover={{ scale: 1.4 }}
+            src={dance}
+            alt="a photography website"
+            style={{ width: "48%" }}
+          />
+        </div>
+
         <div className="project-page-content">
           <h1>From November Photography</h1>
           <p>

@@ -13,14 +13,6 @@ export default function TopNav() {
     setIsOpen(!isOpen);
   }
 
-  function handleHover() {
-    setIsHover(true);
-  }
-
-  function handleOut() {
-    setIsHover(false);
-  }
-
   return (
     <>
       <div className="topper">
