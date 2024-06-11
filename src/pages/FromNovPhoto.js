@@ -33,6 +33,12 @@ export default function FromNovPhoto() {
           <div className="project-images">
             <motion.img
               whileHover={{ scale: 1.1 }}
+              transition={{
+                type: "spring",
+                damping: 10,
+                mass: 0.75,
+                stiffness: 100,
+              }}
               src={main}
               alt="a photography website"
               style={{ width: "100%" }}
@@ -91,18 +97,36 @@ export default function FromNovPhoto() {
         <div className="project-images" style={{ width: "100%" }}>
           <motion.img
             whileHover={{ scale: 1.5 }}
+            transition={{
+              type: "spring",
+              damping: 10,
+              mass: 0.75,
+              stiffness: 100,
+            }}
             src={about}
             alt="a photography website"
             style={{ width: "32.5%" }}
           />
           <motion.img
             whileHover={{ scale: 1.5 }}
+            transition={{
+              type: "spring",
+              damping: 10,
+              mass: 0.75,
+              stiffness: 100,
+            }}
             src={recents}
             alt="a photography website"
             style={{ width: "32.5%" }}
           />
           <motion.img
             whileHover={{ scale: 1.5 }}
+            transition={{
+              type: "spring",
+              damping: 10,
+              mass: 0.75,
+              stiffness: 100,
+            }}
             src={dance}
             alt="a photography website"
             style={{ width: "32.5%" }}

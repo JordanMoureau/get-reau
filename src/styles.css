@@ -453,6 +453,7 @@ footer h3 {
 }
 
 .project-images {
+  transition: 1s;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
