@@ -59,18 +59,18 @@ export default function SlideOut({ isOpen, handleClick }) {
           className="close-button"
         />
 
-        <NavLink to="/fromnov">
-          <div
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseExit}
-            className="project-box"
-            style={{
-              backgroundImage: `url(${
-                !isHoverFromNov ? fromnovphoto : fromnov
-              })`,
-            }}
-          ></div>
+        <NavLink
+          to="/fromnov"
+          className="project-box"
+          style={{
+            backgroundImage: `url(${!isHoverFromNov ? fromnovphoto : fromnov})`,
+          }}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseExit}
+        >
+          <div></div>
         </NavLink>
+
         <div
           onMouseEnter={handleMouseEnterBookish}
           onMouseLeave={handleMouseExitBookish}

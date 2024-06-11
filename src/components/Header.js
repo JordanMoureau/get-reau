@@ -2,7 +2,7 @@ import stars from "../media/stars.png";
 import { useState, useEffect, useRef } from "react";
 import TopNav from "./TopNav.js";
 
-import { motion, useInView, AnimatePresence } from "framer-motion";
+import { useInView } from "framer-motion";
 
 // import { useInView } from "react-intersection-observer";
 
@@ -87,7 +87,7 @@ export default function Header() {
         className="slideout-info"
       >
         <p>
-          A full service creative agency specializing in refined web prescences
+          A full-service creative agency specializing in refined web presences
           for small businesses with the added bonus of being actually
           affordable.
         </p>
@@ -95,10 +95,3 @@ export default function Header() {
     </>
   );
 }
-
-// style={{ overflow: "hidden" }}
-// initial={{ height: 0 }}
-// animate={{ height: "auto" }}
-// transition={{ stiffness: 100, duration: 3 }}
-// exit={{ height: 0 }}
-// key={"container"}
