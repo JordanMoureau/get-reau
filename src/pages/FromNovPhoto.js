@@ -6,7 +6,7 @@ import { MdOutlineCheckBox } from "react-icons/md";
 import TopNav from "../components/TopNav";
 
 import main from "../media/fromnov/main.png";
-import foot from "../media/fromnov/foot.png";
+// import foot from "../media/fromnov/foot.png";
 import dance from "../media/fromnov/dance.png";
 import recents from "../media/fromnov/recents.png";
 import about from "../media/fromnov/about.png";

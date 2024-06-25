@@ -60,7 +60,7 @@ export default function SlideOut({ isOpen, handleClick }) {
         />
 
         <NavLink
-          to="/fromnov"
+          // to="/fromnov"
           className="project-box"
           style={{
             backgroundImage: `url(${!isHoverFromNov ? fromnovphoto : fromnov})`,
