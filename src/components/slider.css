@@ -1,0 +1,127 @@
+.photo-slider-container-main {
+  height: 350px;
+  position: relative;
+}
+
+.photo-slider-container-main-app {
+  height: 650px;
+  position: relative;
+}
+
+.photo-slider-header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  font-family: "Tiny5";
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+.photo-slider-header-buttons {
+  border-radius: 10px;
+  border: 2px solid black;
+  background-color: white;
+  padding: 4px;
+  display: flex;
+  gap: 10px;
+}
+
+.photo-slider-header-buttons svg {
+  width: 20px;
+}
+
+.photo-slider-header-buttons svg:hover {
+  cursor: pointer;
+}
+
+.photo-slider-container {
+  width: 105%;
+  margin-left: -5%;
+}
+
+.photo-slider {
+  display: flex;
+  position: absolute;
+  gap: 20px;
+}
+
+.photo-slider img {
+  border-radius: 40px;
+  border: 2px solid black;
+  width: 320px;
+  object-fit: cover;
+}
+
+.photo-slider img:hover {
+  box-shadow: 10px 8px #f1e6d8, 10px 8px 0 2px black;
+}
+
+@media screen and (max-width: 1040px) {
+  .photo-slider-container-main {
+    height: 30vw;
+  }
+
+  .photo-slider-container-main-app {
+    height: 55vw;
+  }
+  .photo-slider-container {
+    margin-left: -2%;
+  }
+
+  .photo-slider img {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .photo-slider img {
+    width: 50%;
+  }
+
+  .photo-slider-container-main {
+    height: 50vw;
+  }
+
+  .photo-slider-container-main-app {
+    height: 95vw;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .photo-slider-container-main {
+    height: 58vw;
+  }
+  .photo-slider img {
+    width: 65%;
+  }
+
+  .photo-slider-container-main-app {
+    height: 115vw;
+  }
+
+  .photo-slider-header {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .photo-slider-header-buttons {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .photo-slider-container-main {
+    height: 62vw;
+  }
+
+  .photo-slider-container-main-app {
+    height: 145vw;
+  }
+
+  .photo-slider img {
+    width: 85%;
+  }
+}

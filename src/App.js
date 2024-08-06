@@ -1,18 +1,72 @@
-import "./styles.css";
-import Home from "./pages/Home";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import FromNovPhoto from "./pages/FromNovPhoto";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./pages/home";
+import TheBasics from "./pages/thebasics";
+import HowWeDo from "./pages/howwedo";
+import Connect from "./pages/connect";
+import Build from "./pages/build";
+import Navigation from "./components/Navigation";
+import Footer from "./components/Footer";
+import BuildButton from "./components/BuildAProjButton";
+import MenuLaReau from "./pages/menualareau";
+
+import ScrollToTop from "./components/ScrollToTop";
+
+import Loader from "./components/Loader";
+import { useEffect, useState } from "react";
+
+import Popup from "./components/PopUp";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  const [isPopupVisible, setIsPopupVisible] = useState(false);
+
+  useEffect(() => {
+    // Simulate a loading period
+    setTimeout(() => {
+      setLoading(false);
+      setIsLoaded(true);
+    }, 4000); // Change the timeout duration as needed
+  }, []);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsPopupVisible(true);
+    }, 5000); // 5000ms delay (5 seconds)
+
+    return () => clearTimeout(timer); // Cleanup the timer if the component unmounts
+  }, []);
+
+  const closePopup = () => {
+    setIsPopupVisible(false);
+  };
+
   return (
-    <div className="App">
-      <BrowserRouter>
+    <Router>
+      {loading && <Loader />}
+      {/* <Popup isVisible={isPopupVisible} onClose={closePopup} /> */}
+      <ScrollToTop />
+      <Navigation />
+      <div className="App">
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="fromnov" element={<FromNovPhoto />} />
+          <Route path="/" element={<Home isLoaded={isLoaded} />} />
+          <Route path="/howwedo" element={<HowWeDo isLoaded={isLoaded} />} />
+          <Route
+            path="/thebasics"
+            element={<TheBasics isLoaded={isLoaded} />}
+          />
+          <Route path="/connect" element={<Connect isLoaded={isLoaded} />} />
+          <Route
+            path="/buildaproject"
+            element={<Build isLoaded={isLoaded} />}
+          />
+          <Route path="/menualareau" element={<MenuLaReau />} />
         </Routes>
-      </BrowserRouter>
-    </div>
+      </div>
+      <Footer />
+      <BuildButton />
+    </Router>
   );
 }
 

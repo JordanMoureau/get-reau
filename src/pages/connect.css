@@ -1,0 +1,265 @@
+.connect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0px;
+}
+
+.connect-stuff-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.cloud-one {
+  position: relative;
+  z-index: -1;
+  width: 85%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: -56px;
+}
+
+.cloud-one svg {
+  width: 300px;
+}
+
+.cloud-two {
+  position: relative;
+  width: 85%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: -56px;
+  margin-left: 260px;
+  z-index: 0;
+}
+
+.cloud-two svg {
+  width: 400px;
+}
+
+.worktogether {
+  width: 30%;
+  max-width: 300px;
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 50px;
+  padding: 40px 50px;
+  height: 70vh;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  max-height: 600px;
+}
+
+.worktogether .star {
+  display: flex;
+  justify-content: end;
+  width: 55px;
+  height: 55px;
+  margin: 50px 0px 40px 0px;
+}
+
+.worktogether h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  font-family: "Tiny5";
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+form {
+  max-height: 600px;
+  max-width: 600px;
+  width: 60%;
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 50px;
+  padding: 40px 20px;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin-left: 22px;
+  font-family: "acumin-variable", sans-serif;
+}
+
+input {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: black;
+  border-radius: 20px;
+  background-color: #f1e6d8;
+  padding: 5px 15px;
+  width: 60%;
+  margin-top: 10px;
+  border: 2px solid black;
+}
+
+textarea {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: black;
+  font-family: "acumin-variable", sans-serif;
+  margin-top: 10px;
+  padding: 5px 15px;
+  background-color: #f1e6d8;
+  border-radius: 20px;
+  height: 165px;
+  border: 2px solid black;
+}
+
+input::placeholder {
+  color: black;
+}
+
+textarea::placeholder {
+  color: black;
+}
+
+form .submit-button-container {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+form button {
+  width: fit-content;
+  margin-top: 35px;
+  background-color: #f1e6d8;
+  border: 2px solid black;
+  border-radius: 50px;
+  padding: 10px 30px;
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Tiny5";
+  text-transform: uppercase;
+  box-shadow: 6px 5px #f6915e, 6px 5px 0 2px black;
+}
+
+form button:hover {
+  background-color: white;
+  box-shadow: 6px 9px #f6915e, 6px 9px 0 2px black;
+  cursor: pointer;
+}
+
+form .heart-position {
+  display: flex;
+  justify-content: end;
+  margin-right: -50px;
+  margin-bottom: 60px;
+}
+
+form .heart {
+  border: 2px solid black;
+  border-radius: 600px;
+  background-color: #f1e6d8;
+  width: 75px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submission-message {
+  margin-bottom: -100px;
+  position: relative;
+  width: 60%;
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Tiny5";
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 900px) {
+  .connect-stuff-container {
+    flex-direction: column;
+  }
+  form {
+    margin-top: 20px;
+    width: 100%;
+    margin-left: 0;
+    max-width: 900px;
+  }
+
+  .worktogether {
+    width: 100%;
+    max-width: 900px;
+    padding: 0 20px;
+  }
+
+  .worktogether h1 {
+    padding: 0px 30px;
+    width: 60%;
+    margin-bottom: 10px;
+    margin-top: 30px;
+  }
+
+  .worktogether p {
+    width: 60%;
+    padding: 0px 30px;
+  }
+
+  .worktogether .star {
+    padding: 0px 30px;
+  }
+  .cloud-one {
+    z-index: 0;
+    justify-content: end;
+    margin-bottom: -150px;
+  }
+
+  .cloud-two {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .worktogether h1 {
+    width: auto;
+  }
+
+  input {
+    width: auto;
+  }
+
+  .worktogether p {
+    width: auto;
+  }
+
+  .cloud-one {
+    display: none;
+  }
+
+  .cloud-two {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .worktogether h1 {
+    font-size: 2.2rem;
+    padding: 0 10px;
+  }
+
+  .worktogether p {
+    font-size: 0.9rem;
+    padding: 0 10px;
+  }
+
+  .worktogether .star {
+    padding: 0 10px;
+  }
+
+  form button {
+    font-size: 1.3rem;
+  }
+}

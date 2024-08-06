@@ -1,0 +1,111 @@
+.menu-la-reau {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  font-family: "Tiny5";
+  font-size: 1.5rem;
+  font-weight: 100;
+  max-width: 700px;
+}
+
+.menu-la-reau h1 {
+  font-weight: 100;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.menu-list-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.menu-list {
+  width: 100%;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: row;
+  margin: 5px 0px;
+  padding: 20px;
+  border-radius: 20px;
+}
+.menu-item:hover {
+  background-color: white;
+  border: 2px solid black;
+}
+.menu-header {
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+.menu-detail {
+  margin-bottom: 5px;
+}
+
+.menu-button-container {
+  width: 40%;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+.menu-button {
+  display: none;
+  align-items: center;
+  background-color: #f1e6d8;
+  padding: 0px 10px 0px 0px;
+  border-radius: 50px;
+  text-align: center;
+  height: fit-content;
+  border: 2px solid black;
+  width: fit-content;
+  text-transform: uppercase;
+}
+
+.menu-button .heart {
+  margin: -10px -2px -13px;
+}
+
+.menu-button svg {
+  width: 50px;
+}
+.menu-item:hover .menu-button {
+  display: flex;
+}
+
+.menu-button:hover {
+  cursor: pointer;
+  box-shadow: 4px 4px black;
+}
+
+@media screen and (max-width: 700px) {
+  .menu-la-reau {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .menu-item {
+    flex-direction: column;
+    background-color: white;
+    border: 2px solid black;
+  }
+
+  .menu-list {
+    width: 100%;
+  }
+
+  .menu-button-container {
+    width: 100%;
+  }
+
+  .menu-button {
+    display: flex;
+  }
+}

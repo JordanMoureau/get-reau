@@ -1,0 +1,209 @@
+.build-project {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.build-box {
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: #f1e6d8;
+  border-radius: 40px;
+  border: 2px solid black;
+  box-shadow: 16px 14px #f6915e, 16px 14px 0 2px black;
+  margin-bottom: 20px;
+}
+
+.build-top-bar {
+  width: 100%;
+  border-bottom: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.build-submit-message {
+  margin-top: -60px;
+  background-color: #f1e6d8;
+  border-top: 2px solid black;
+  padding: 5px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: "Tiny5";
+  text-transform: uppercase;
+}
+
+.https {
+  margin: 20px 20px 10px 20px;
+  padding: 8px 15px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 100px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: "Tiny5";
+  text-transform: uppercase;
+}
+.build-top-bar svg {
+  margin: 20px 20px 10px 20px;
+  width: 70px;
+}
+
+.build-main {
+  display: flex;
+}
+
+.build-col-one {
+  width: 70%;
+  border-right: 2px solid black;
+  flex-direction: column;
+  display: flex;
+}
+
+.make-waves-box {
+  width: 100%;
+}
+
+.make-waves-box-waves {
+  z-index: -1;
+  border-bottom: 2px solid black;
+}
+
+.make-waves-text {
+  margin-top: 25px;
+  padding: 5px;
+  margin-bottom: -50px;
+}
+
+.instruct-tab {
+  width: 60%;
+  z-index: 1;
+  margin: -215px 0px 10px 10px;
+  padding-bottom: 50px;
+}
+
+.add-buttons {
+  border-top: 2px solid black;
+  margin-top: -50px;
+  z-index: 0;
+  padding: 15px;
+  background-color: #f1e6d8;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 15px;
+  border-bottom-left-radius: 40px;
+}
+
+.add-buttons button {
+  padding: 5px 20px;
+  border-radius: 100px;
+  border: 2px solid black;
+  font-family: "Tiny5";
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 200;
+  background-color: #f6915e;
+}
+
+.add-buttons button:hover {
+  cursor: pointer;
+  box-shadow: 6px 4px #f1e6d8, 6px 4px 0 2px black;
+}
+
+.build-col-two {
+  width: 30%;
+  background-color: #f6915e;
+  border-bottom-right-radius: 40px;
+}
+
+.build-col-two input {
+  width: 100%;
+  padding: 5px 0;
+  margin: 0;
+  text-align: center;
+  border-radius: 0;
+  background-color: #f1e6d8;
+  border-bottom: 2px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  font-family: "Tiny5";
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+.build-submit {
+  padding: 6px 0px;
+  border-top: 2px solid black;
+  width: 100%;
+  background-color: #f1e6d8;
+  border-bottom-right-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.build-submit svg {
+  height: 60px;
+}
+
+.build-submit:hover {
+  background-color: #f6915e;
+  cursor: pointer;
+}
+.added-services {
+  min-height: 50vh;
+  padding: 15px;
+}
+
+.added-services button {
+  margin: 5px 0px;
+  padding: 5px 20px;
+  border-radius: 100px;
+  border: 2px solid black;
+  font-family: "Tiny5";
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 200;
+  background-color: #f1e6d8;
+}
+.build-col-two button:hover {
+  cursor: pointer;
+  box-shadow: 6px 4px #f6915e, 6px 4px 0 2px black;
+}
+
+@media screen and (max-width: 880px) {
+  .add-buttons {
+    border-bottom: 2px solid black;
+    border-radius: 0;
+  }
+
+  .added-services {
+    min-height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .build-main {
+    display: block;
+  }
+
+  .build-col-one {
+    width: 100%;
+  }
+
+  .build-col-two {
+    width: 100%;
+    border-bottom-left-radius: 40px;
+  }
+
+  .build-submit {
+    border-bottom-left-radius: 40px;
+  }
+}

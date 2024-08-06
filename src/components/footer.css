@@ -1,0 +1,79 @@
+footer {
+  font-family: "Tiny5";
+  text-transform: uppercase;
+  font-weight: 100;
+  padding: 40px 30px;
+  background-color: white;
+  border-top: 2px solid black;
+}
+
+footer h3 {
+  font-size: 2rem;
+  font-weight: 200;
+  margin-bottom: 9px;
+}
+
+footer h4 {
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+footer ul {
+  margin: 10px 0;
+  display: flex;
+  font-family: "acumin-variable", sans-serif;
+  gap: 5px;
+}
+
+.social-foot {
+  display: flex;
+  flex-direction: column;
+}
+
+footer button {
+  margin-top: 12px;
+  font-size: 1rem;
+  background-color: #f1e6d8;
+  border: 2px solid black;
+  border-radius: 50px;
+  font-family: "Tiny5";
+  text-transform: uppercase;
+  padding: 5px 11px;
+}
+
+footer button:hover {
+  background-color: black;
+  color: #f1e6d8;
+  cursor: pointer;
+}
+
+footer .social {
+  margin-left: 5px;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+  footer li {
+    font-size: 0.8rem;
+  }
+  footer h4 {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  footer li {
+    font-size: 0.6rem;
+  }
+  footer h4 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 327px) {
+  footer li {
+    font-size: 0.5rem;
+  }
+}

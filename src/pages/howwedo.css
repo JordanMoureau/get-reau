@@ -1,0 +1,646 @@
+.how-we-do {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.how-we-do-main {
+  width: 100%;
+  display: flex;
+  max-width: 900px;
+  background-color: #f1e6d8;
+  border-radius: 40px;
+  border: 2px solid black;
+  margin-bottom: 20px;
+  flex-direction: column;
+  padding-bottom: 40px;
+}
+
+.rainbows {
+  background-image: url('data:image/svg+xml,%3Csvg id="uuid-c97c6054-984d-483f-a6be-15f5a10dbf09" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 412.38 1775.83"%3E%3Cpolygon points=".04 229.96 .04 255.05 412.38 25.41 412.38 .31 .04 229.96" fill="%23eb6224" stroke-width="0"/%3E%3Cpolygon points=".04 252.27 .04 277.37 412.38 47.72 412.38 22.63 .04 252.27" fill="%23f6915e" stroke-width="0"/%3E%3Cpolygon points=".04 296.47 .04 321.56 412.38 91.92 412.38 66.82 .04 296.47" fill="%23f7cb3f" stroke-width="0"/%3E%3Cpolygon points=".04 273.65 .04 298.75 412.38 69.1 412.38 44.01 .04 273.65" fill="%23d5b22d" stroke-width="0"/%3E%3Cpolygon points=".12 320.34 .12 345.44 412.38 115.84 412.38 90.75 .12 320.34" fill="%2385a5d6" stroke-width="0"/%3E%3Cpolygon points="0 320.68 167.41 227.45 412.38 90.75 412.38 90.45 0 320.11 0 320.68" fill="%23231f20" stroke-width="0"/%3E%3Cpolygon points="0 299.05 412.38 69.39 412.38 68.82 0 298.48 0 299.05" fill="%23231f20" stroke-width="0"/%3E%3Cpolygon points="0 345.78 412.38 116.11 412.38 115.54 0 345.2 0 345.78" fill="%23231f20" stroke-width="0"/%3E%3Cpolygon points="0 252.58 412.38 22.91 412.38 22.34 0 252 0 252.58" fill="%23231f20" stroke-width="0"/%3E%3Cpolygon points="0 229.66 0 230.24 412.38 .57 412.38 0 0 229.66" fill="%23231f20" stroke-width="0"/%3E%3Cpolygon points="0 273.96 412.38 44.29 412.38 43.72 0 273.39 0 273.96" fill="%23231f20" stroke-width="0"/%3E%3Cpolygon points=".04 849.68 .04 824.59 412.38 1054.23 412.38 1079.33 .04 849.68" fill="%23eb6224" stroke-width="0"/%3E%3Cpolygon points=".04 827.37 .04 802.27 412.38 1031.92 412.38 1057.01 .04 827.37" fill="%23f6915e" stroke-width="0"/%3E%3Cpolygon points=".04 783.17 .04 758.08 412.38 987.72 412.38 1012.81 .04 783.17" fill="%23f7cb3f" stroke-width="0"/%3E%3Cpolygon points=".04 805.99 .04 780.89 412.38 1010.53 412.38 1035.63 .04 805.99" fill="%23d5b22d" stroke-width="0"/%3E%3Cpolygon points=".12 759.3 .12 734.2 412.38 963.8 412.38 988.89 .12 759.3" fill="%2385a5d6" stroke-width="0"/%3E%3Cpolygon points="0 758.96 167.41 852.19 412.38 988.89 412.38 989.19 0 759.53 0 758.96" fill="%23231f20" stroke-width="0"/%3E%3Cpolygon points="0 780.59 412.38 1010.25 412.38 1010.82 0 781.16 0 780.59" fill="%23231f20" stroke-width="0"/%3E%3Cpolygon points="0 733.86 412.38 963.53 412.38 964.1 0 734.44 0 733.86" fill="%23231f20" stroke-width="0"/%3E%3Cpolygon points="0 827.06 412.38 1056.73 412.38 1057.3 0 827.63 0 827.06" fill="%23231f20" stroke-width="0"/%3E%3Cpolygon points="0 849.97 0 849.4 412.38 1079.07 412.38 1079.64 0 849.97" fill="%23231f20" stroke-width="0"/%3E%3Cpolygon points="0 805.68 412.38 1035.34 412.38 1035.92 0 806.25 0 805.68" fill="%23231f20" stroke-width="0"/%3E%3Cpolygon points=".04 1660.01 .04 1685.11 412.38 1455.46 412.38 1430.37 .04 1660.01" fill="%23eb6224" stroke-width="0"/%3E%3Cpolygon points=".04 1682.33 .04 1707.42 412.38 1477.78 412.38 1452.69 .04 1682.33" fill="%23f6915e" stroke-width="0"/%3E%3Cpolygon points=".04 1726.52 .04 1751.62 412.38 1521.97 412.38 1496.88 .04 1726.52" fill="%23f7cb3f" stroke-width="0"/%3E%3Cpolygon points=".04 1703.71 .04 1728.8 412.38 1499.16 412.38 1474.07 .04 1703.71" fill="%23d5b22d" stroke-width="0"/%3E%3Cpolygon points=".12 1750.4 .12 1775.49 412.38 1545.9 412.38 1520.8 .12 1750.4" fill="%2385a5d6" stroke-width="0"/%3E%3Cpolygon points="0 1750.74 167.41 1657.5 412.38 1520.81 412.38 1520.5 0 1750.17 0 1750.74" fill="%23231f20" stroke-width="0"/%3E%3Cpolygon points="0 1729.11 412.38 1499.44 412.38 1498.87 0 1728.54 0 1729.11" fill="%23231f20" stroke-width="0"/%3E%3Cpolygon points="0 1775.83 412.38 1546.17 412.38 1545.6 0 1775.26 0 1775.83" fill="%23231f20" stroke-width="0"/%3E%3Cpolygon points="0 1682.63 412.38 1452.97 412.38 1452.4 0 1682.06 0 1682.63" fill="%23231f20" stroke-width="0"/%3E%3Cpolygon points="0 1659.72 0 1660.29 412.38 1430.63 412.38 1430.06 0 1659.72" fill="%23231f20" stroke-width="0"/%3E%3Cpolygon points="0 1704.01 412.38 1474.35 412.38 1473.78 0 1703.44 0 1704.01" fill="%23231f20" stroke-width="0"/%3E%3C/svg%3E');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 300px;
+}
+
+.how-header {
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+  border-bottom: 2px solid black;
+  background-color: white;
+  font-size: 5rem;
+  font-family: "Avilock";
+  padding: 20px 0px 0px 40px;
+}
+
+.how {
+  z-index: -1;
+  margin-top: -78px;
+  color: white;
+  -webkit-text-stroke: 1px black;
+}
+
+.how-offset {
+  margin-left: 5px;
+  color: #f1e6d8;
+  -webkit-text-stroke: 1px black; /* Text stroke for WebKit (Safari, Chrome) */
+}
+
+.how-serv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  padding: 60px;
+  gap: 80px;
+}
+
+.serv {
+  width: 50%;
+  max-width: 350px;
+}
+.serv-player {
+  margin-right: 50px;
+}
+
+.serv h2 {
+  font-family: "Tiny5";
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+.serv p {
+  font-size: 1.2rem;
+
+  margin-bottom: 40px;
+}
+
+.how-serv img {
+  object-fit: cover;
+  width: 40%;
+  border-radius: 40px;
+  border: 2px solid black;
+  box-shadow: 16px 14px #f6915e, 16px 14px 0 2px black;
+}
+
+.web-builds-section {
+  margin-top: 50px;
+  padding: 40px;
+}
+
+.web-builds {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: start;
+  padding-top: 40px;
+  gap: 60px;
+}
+
+.web-builds-section img {
+  object-fit: cover;
+  width: 46%;
+  border-radius: 40px;
+  border: 2px solid black;
+  box-shadow: 16px 14px #f6915e, 16px 14px 0 2px black;
+}
+
+.web-builds-section svg {
+  width: 50px;
+}
+
+.photo-slider-container .heart-container {
+  margin-bottom: -90px;
+  margin-left: 12px;
+  display: flex;
+}
+
+.photo-slider-container .heart {
+  margin-top: 10px;
+  border: 2px solid black;
+  border-radius: 600px;
+  background-color: #f1e6d8;
+  width: 75px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+.builds-row {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.bubble-box {
+  flex-wrap: wrap;
+  display: flex;
+  gap: 10px;
+  margin: 50px 0px;
+}
+
+.bubble-box button {
+  padding: 5px 20px;
+  border-radius: 100px;
+  border: 2px solid black;
+  font-family: "Tiny5";
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 200;
+  background-color: #f6915e;
+}
+
+.bubble-box button:hover {
+  cursor: pointer;
+  box-shadow: 6px 4px #f1e6d8, 6px 4px 0 2px black;
+}
+
+.serv-line-up {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.serv-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.serv-row h2 {
+  font-family: "Tiny5";
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+.serv-line-up-col {
+  margin-top: 50px;
+  margin-left: 40px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.serv-line-up-col .build-a-button {
+  margin-top: 70px;
+  width: 60%;
+  position: relative;
+  bottom: auto;
+  right: auto;
+  box-shadow: 8px 6px #f1e6d8, 8px 6px 0 2px black;
+}
+
+.serv-line-up-col .build-a-button:hover {
+  box-shadow: 8px 6px #7291ca, 8px 6px 0 2px black;
+}
+
+.serv-line-up-col svg {
+  width: 50px;
+}
+
+.how-campaigns {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 70px;
+  align-items: center;
+  justify-content: center;
+}
+
+.how-campaigns-blurb {
+  width: 30%;
+  margin: 20px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 40px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.how-campaigns-blurb p {
+  font-family: "Tiny5";
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+.how-campaigns-blurb svg {
+  width: 60px;
+}
+
+.how-button {
+  display: flex;
+  align-items: center;
+  margin-top: -90px;
+}
+
+.how-button button {
+  /* width: 90%;
+  max-width: 600px; */
+  padding: 5px 60px 0px 60px;
+  color: #f6915e;
+  font-family: "Avilock";
+  font-size: 5.5rem;
+  text-transform: uppercase;
+  font-weight: 200;
+  width: 100%;
+  background-color: #f1e6d8;
+  border: 2px solid black;
+  border-radius: 30px;
+  box-shadow: 0px 9px #f6915e, 0px 9px 0 2px black;
+}
+
+.how-button button:hover {
+  cursor: pointer;
+  background-color: #f6915e;
+  box-shadow: 0px 9px #f1e6d8, 0px 9px 0 2px black;
+}
+
+.how-button .main-text {
+  z-index: -1;
+  margin-top: -85px;
+  margin-bottom: -5px;
+  color: #f7cb3f;
+  -webkit-text-stroke: 1px black;
+}
+
+.how-button .offset {
+  margin-left: 10px;
+  color: #f6915e;
+  -webkit-text-stroke: 1px black;
+}
+
+.how {
+  z-index: -1;
+  margin-top: -78px;
+  color: white;
+  -webkit-text-stroke: 1px black;
+}
+
+.accordion {
+  margin: 20px;
+  width: 50%;
+  background-color: #f6915e;
+  border-radius: 40px;
+  font-family: "Tiny5";
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+.accordion .main {
+  position: relative;
+  z-index: 1;
+  border: 2px solid black;
+  border-radius: 40px;
+  background-color: #f1e6d8;
+  color: #f6915e;
+  font-family: "Avilock";
+  font-size: 5.7rem;
+  line-height: 0.78;
+  text-transform: uppercase;
+  font-weight: 200;
+  -webkit-text-stroke: 1px black;
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 216.82 94.67"%3E%3Cpath d="m12.28,9.24l18.59,19.43-4.37,14.97,16.81,11.88-2.81,10.28,14.85,10.65-26.77-5.71,2.42-12.08-19.09-5.81.38-12.66-5.28-4.13v-15.51s.29-8.21,5.28-11.31Z" fill="%23f7cb3f" stroke="%232d1d16" strokeMiterlimit="10" strokeWidth=".5"/%3E%3Cpolygon points="175.36 21.34 210.45 21.34 210.45 40.87 193.23 51.33 196.55 63.87 172.16 84.85 182.09 61.71 175.94 51.33 189.61 39.06 175.36 21.34" fill="%23f7cb3f" stroke="%232d1d16" strokeMiterlimit="10" strokeWidth=".5"/%3E%3Cpath d="m.17,30.84c3.92-.81,7.57-2.29,10.81-4.32,2.37,1.47,5.35,2.38,8.63,2.46,4.61.1,8.73-1.49,11.38-4.02,3.06,1.96,6.65,3.15,10.54,3.23,3.77.08,7.31-.88,10.39-2.6.15,4.39,5.14,8,11.39,8.13,3.72.08,7.06-1.1,9.22-2.98,2.22,3.43,7,5.87,12.61,5.99,3.75.08,7.17-.89,9.75-2.53,3,2.53,7.3,4.17,12.12,4.28,4.04.09,7.78-.91,10.71-2.65,3.04,1.11,6.39,1.76,9.92,1.84,9.28.2,17.48-3.6,22.15-9.46,2.61,1.56,5.65,2.49,8.93,2.56,6,.13,11.37-2.64,14.75-7,2.64,2.96,6.87,4.94,11.71,5.05,6.27.14,11.69-2.91,13.95-7.32,3.63,2.5,7.91,4.01,12.53,4.11,1.74.04,3.44-.12,5.08-.46V0H0l.17,30.84Z" fill="%23fff" strokeWidth="0"/%3E%3Cpath d="m.2,30.68c3.92-.81,7.57-2.29,10.81-4.32,2.37,1.47,5.35,2.38,8.63,2.46,4.61.1,8.73-1.49,11.38-4.02,3.06,1.96,6.65,3.15,10.54,3.23,3.77.08,7.31-.88,10.39-2.6.15,4.39,5.14,8,11.39,8.13,3.72.08,7.06-1.1,9.22-2.98,2.22,3.43,7,5.87,12.61,5.99,3.75.08,7.17-.89,9.75-2.53,3,2.53,7.3,4.17,12.12,4.28,4.04.09,7.78-.91,10.71-2.65,3.04,1.11,6.39,1.76,9.92,1.84,9.28.2,17.48-3.6,22.15-9.46,2.61,1.56,5.65,2.49,8.93,2.56,6,.13,11.37-2.64,14.75-7,2.64,2.96,6.87,4.94,11.71,5.05,6.27.14,11.69-2.91,13.95-7.32,3.63,2.5,7.91,4.01,12.53,4.11,1.74.04,3.44-.12,5.08-.46" fill="none" stroke="%232d1d16" strokeMiterlimit="10" strokeWidth=".5"/%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.killer-campaigns {
+  padding: 18px 50px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accordion .main svg {
+  border-radius: 40px;
+  width: 100%;
+  object-fit: cover;
+}
+.accordion-item {
+  margin-top: -60px;
+  padding: 60px 40px 0px 40px;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+
+.plus {
+  position: relative;
+  z-index: 0;
+  font-size: 2.5rem;
+}
+
+.accordion-content {
+  overflow: hidden;
+  z-index: 2;
+}
+
+.accordion .active {
+  position: relative;
+  z-index: 4;
+  border: 2px solid black;
+  padding: 30px 40px;
+  border-radius: 40px;
+  background-color: #f1e6d8;
+}
+
+.accordion-item:hover {
+  cursor: pointer;
+}
+
+.spacer {
+  margin-top: -93px;
+  border: 2px solid black;
+  padding: 10px;
+  position: relative;
+  z-index: 3;
+  background-color: #f7cb3f;
+  border-radius: 40px;
+  height: 85px;
+}
+
+svg {
+  stroke-width: inherit;
+}
+
+.hide {
+  display: block;
+}
+
+@media screen and (max-width: 929px) {
+  .web-builds {
+    gap: 20px;
+  }
+
+  .serv-line-up-col .build-a-button {
+    width: 65%;
+  }
+
+  .serv-row h2 {
+    font-size: 2rem;
+  }
+
+  .build-a-button {
+    gap: 0px;
+  }
+}
+
+@media screen and (max-width: 846px) {
+  .how-header {
+    text-align: center;
+  }
+
+  .how-offset {
+    margin-left: 10px;
+  }
+
+  .serv {
+    width: 100%;
+    max-width: 450px;
+  }
+
+  .how-serv {
+    gap: 10px;
+  }
+
+  .serv h2 {
+    font-size: 1.9rem;
+  }
+
+  .serv p {
+    font-size: 1.25rem;
+  }
+
+  .web-builds {
+    flex-wrap: wrap-reverse;
+  }
+
+  .web-builds-section img {
+    width: 86%;
+  }
+
+  .hide {
+    display: none;
+  }
+  .serv-line-up {
+    justify-content: start;
+    display: none;
+  }
+  .how-campaigns {
+    flex-direction: column-reverse;
+  }
+
+  .how-campaigns-blurb {
+    width: 50%;
+    margin: 70px 0px 0px 0px;
+  }
+
+  .accordion {
+    width: 59%;
+  }
+}
+
+@media screen and (max-width: 731px) {
+  .serv {
+    width: 100%;
+  }
+  .how-serv {
+    padding: 40px;
+  }
+
+  .how-campaigns {
+    padding: 5%;
+    width: 90%;
+  }
+
+  .how-campaigns-blurb {
+    width: 70%;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .accordion {
+    width: 81%;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .serv-player {
+    margin: 0px 13px;
+    width: 74%;
+  }
+
+  .how-serv {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .how-serv img {
+    margin-top: 40px;
+    width: 75%;
+  }
+
+  .how-button {
+    margin-top: 0px;
+    width: 100%;
+  }
+  .how-button a {
+    width: 100%;
+  }
+
+  .how-button button {
+    font-size: 4.5rem;
+    width: 100%;
+    padding: 1%;
+  }
+
+  .how-button .main-text {
+    margin-top: -70px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .how-campaigns-blurb {
+    width: 85%;
+  }
+
+  .accordion {
+    width: 100%;
+  }
+  .serv-player {
+    margin: 0px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 584px) {
+  .how-serv img {
+    margin-top: 40px;
+    width: 100%;
+  }
+  .serv-player {
+    margin: 0px 0px;
+  }
+  .how-we-do-main {
+    padding-bottom: 0px;
+  }
+  .how-campaigns {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .how-button button {
+    font-size: 4rem;
+    border-radius: 20px;
+  }
+
+  .accordion-content {
+    font-size: 1.2rem;
+  }
+
+  .how-button .main-text {
+    margin-top: -62px;
+  }
+
+  .accordion .main {
+    font-size: 5rem;
+  }
+  .how-campaigns-blurb {
+    padding: 20px;
+  }
+  .how-campaigns-blurb p {
+    font-size: 1rem;
+  }
+  .how-campaigns-blurb svg {
+    margin-top: 10px;
+    width: 40px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .how-header {
+    text-align: center;
+    font-size: 3.5rem;
+  }
+
+  .how-offset {
+    margin-left: 10px;
+  }
+
+  .how {
+    margin-top: -54px;
+  }
+
+  .serv h2 {
+    font-size: 1.6rem;
+  }
+
+  .serv p {
+    font-size: 1.1rem;
+  }
+  .accordion .main {
+    font-size: 3.8rem;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .photo-slider-container .heart-container {
+    display: none;
+  }
+
+  .how-serv {
+    padding: 20px;
+  }
+
+  .how-serv img {
+    margin-top: 20px;
+    width: 90%;
+  }
+  .serv-player {
+    width: 90%;
+  }
+
+  .serv p {
+    margin-bottom: 20px;
+  }
+
+  .web-builds-section {
+    padding: 20px;
+  }
+  .web-builds-section img {
+    width: 90%;
+  }
+  .how-button button {
+    font-size: 2.8rem;
+    border-radius: 15px;
+    padding: 10px 0px;
+  }
+  .how-button .main-text {
+    margin-top: -44px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .how-header {
+    font-size: 3rem;
+  }
+  .how {
+    margin-top: -47px;
+  }
+  .how-offset {
+    margin-left: 7px;
+  }
+}
