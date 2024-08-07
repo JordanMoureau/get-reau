@@ -105,7 +105,11 @@ export default function Slider({ header, images, isLoaded }) {
               transition={slideTransition}
             >
               {currentImages.map((image, index) => (
-                <img src={image} key={index} />
+                <img
+                  src={image}
+                  alt="slider images for design agency"
+                  key={index}
+                />
               ))}
             </motion.div>
           </div>

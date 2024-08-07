@@ -1,26 +1,25 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./pages/home";
-import TheBasics from "./pages/thebasics";
-import HowWeDo from "./pages/howwedo";
-import Connect from "./pages/connect";
-import Build from "./pages/build";
-import Navigation from "./components/Navigation";
-import Footer from "./components/Footer";
-import BuildButton from "./components/BuildAProjButton";
-import MenuLaReau from "./pages/menualareau";
+import Home from "./pages/home.js";
+import TheBasics from "./pages/thebasics.js";
+import HowWeDo from "./pages/howwedo.js";
+import Connect from "./pages/connect.js";
+import Build from "./pages/build.js";
+import Navigation from "./components/Navigation.js";
+import Footer from "./components/Footer.js";
+import BuildButton from "./components/BuildAProjButton.js";
 
 import ScrollToTop from "./components/ScrollToTop";
 
 import Loader from "./components/Loader";
 import { useEffect, useState } from "react";
 
-import Popup from "./components/PopUp";
+// import Popup from "./components/PopUp";
 
 function App() {
   const [loading, setLoading] = useState(true);
   const [isLoaded, setIsLoaded] = useState(false);
 
-  const [isPopupVisible, setIsPopupVisible] = useState(false);
+  // const [isPopupVisible, setIsPopupVisible] = useState(false);
 
   useEffect(() => {
     // Simulate a loading period
@@ -30,17 +29,17 @@ function App() {
     }, 4000); // Change the timeout duration as needed
   }, []);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsPopupVisible(true);
-    }, 5000); // 5000ms delay (5 seconds)
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setIsPopupVisible(true);
+  //   }, 5000); // 5000ms delay (5 seconds)
 
-    return () => clearTimeout(timer); // Cleanup the timer if the component unmounts
-  }, []);
+  //   return () => clearTimeout(timer); // Cleanup the timer if the component unmounts
+  // }, []);
 
-  const closePopup = () => {
-    setIsPopupVisible(false);
-  };
+  // const closePopup = () => {
+  //   setIsPopupVisible(false);
+  // };
 
   return (
     <Router>
@@ -61,7 +60,6 @@ function App() {
             path="/buildaproject"
             element={<Build isLoaded={isLoaded} />}
           />
-          <Route path="/menualareau" element={<MenuLaReau />} />
         </Routes>
       </div>
       <Footer />

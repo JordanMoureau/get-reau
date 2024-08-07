@@ -86,7 +86,7 @@ function HowWeDo({ isLoaded }) {
             </div>
           </div>
 
-          <img src={NewLove} />
+          <img alt="website build for a coffee shop" src={NewLove} />
         </div>
         <div className="photo-slider-container-main">
           <Slider
@@ -99,7 +99,7 @@ function HowWeDo({ isLoaded }) {
 
         <div className="web-builds-section">
           <div className="web-builds">
-            <img src={Bookish} />
+            <img alt="web design for a wordpress template" src={Bookish} />
             <div className="serv">
               <div className="builds-row">
                 <Star isLoaded={isLoaded} /> <h2>Web Builds</h2>
@@ -144,7 +144,11 @@ function HowWeDo({ isLoaded }) {
                   </div>
                 </Link>
               </div>
-              <img src={BookishTwo} className="hide" />
+              <img
+                src={BookishTwo}
+                alt="wordpress template design for a website build"
+                className="hide"
+              />
             </div>
           </div>
         </div>

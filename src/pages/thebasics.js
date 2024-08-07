@@ -5,7 +5,7 @@ import Heart from "../components/Heart";
 import Star from "../components/Star";
 import RetroPlayer from "../components/RetroPlayer";
 import { motion } from "framer-motion";
-import CloudOne, { CloudTwo, CloudThree } from "../components/Clouds";
+import CloudOne, { CloudTwo } from "../components/Clouds";
 
 import Here from "../media/HereinYourArms.mp3";
 
@@ -40,7 +40,10 @@ function TheBasics({ isLoaded }) {
 
       <div className="stage-two">
         <div className="about-me">
-          <img src={profilepic} />
+          <img
+            alt="portrait of a web designer/web developer"
+            src={profilepic}
+          />
           <div className="heart-position">
             <Heart isLoaded={isLoaded} />
           </div>
@@ -290,6 +293,7 @@ function Face({ href }) {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 18.42 18.42"
       whileHover={{ scale: 1.2 }}
+      onClick={handleClick}
     >
       <circle
         cx="9.21"

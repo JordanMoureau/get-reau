@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "../pages/connect.css";
 import Star from "./Star";
 

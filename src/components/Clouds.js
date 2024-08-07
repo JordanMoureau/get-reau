@@ -1,5 +1,4 @@
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
 
 export default function CloudOne({ isLoaded }) {
   return (

@@ -159,7 +159,3 @@ function MobileMenu({ isMobile, toggleMenu }) {
 }
 
 export default Navigation;
-
-{
-  /* <LiaTimesSolid />  */
-}
