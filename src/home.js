@@ -1,18 +1,18 @@
-import Heart from "../components/Heart";
+import Heart from "./components/Heart";
 import "./home.css";
-import Star from "../components/Star";
-import CloudOne, { CloudTwo } from "../components/Clouds";
+import Star from "./components/Star";
+import CloudOne, { CloudTwo } from "./components/Clouds";
 
 import { motion } from "framer-motion";
 
 import { Link } from "react-router-dom";
 
-import Squares from "../components/Squares";
-import RetroPlayer from "../components/RetroPlayer";
+import Squares from "./components/Squares";
+import RetroPlayer from "./components/RetroPlayer";
 
-import ThunderStruck from "../media/Thunderstruck.mp3";
+import ThunderStruck from "./media/Thunderstruck.mp3";
 
-import MenuLaReau from "../components/MenuLaReau";
+import MenuLaReau from "./components/MenuLaReau";
 
 function Home({ isLoaded }) {
   const pulseAnimation = {
