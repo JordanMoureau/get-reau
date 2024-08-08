@@ -818,7 +818,7 @@
   }
 
   .mantra {
-    width: 110%;
+    width: 100%;
     box-shadow: none;
   }
 }
@@ -837,7 +837,7 @@
   }
 
   .home-header-container {
-    width: 105%;
+    width: 95%;
   }
   .home-header-container-header {
     padding: 15px 0px;
@@ -857,5 +857,9 @@
 
   .your-vibes-top-bar svg {
     display: none;
+  }
+
+  .your-vibes-main {
+    padding: 60px 60px 140px 60px;
   }
 }
