@@ -19,6 +19,10 @@
   overflow: hidden;
 }
 
+a {
+  color: inherit;
+}
+
 body {
   width: 100%;
   margin: 0;
