@@ -764,6 +764,10 @@
   .home-header-container .topper {
     padding: 0px 20px;
   }
+
+  .we-create-col-one {
+    margin-left: 0px;
+  }
 }
 
 @media screen and (max-width: 483px) {
@@ -821,23 +825,30 @@
 
 @media screen and (max-width: 405px) {
   .mantra .offset {
-    font-size: 3rem;
-    margin-top: -52px;
+    font-size: 7rem;
+    margin-top: -222px;
     padding: 0px 10px 5px 10px;
   }
 
   .mantra .main {
-    font-size: 3rem;
+    font-size: 7rem;
     margin-left: 6px;
     padding: 0px 10px 5px 10px;
   }
 
   .home-header-container {
-    width: 125%;
+    width: 105%;
+  }
+  .home-header-container-header {
+    padding: 15px 0px;
   }
 
   .your-vibes {
     width: 135%;
+  }
+
+  .star-row {
+    margin-bottom: -122px;
   }
 
   .your-vibes-main h2 {
